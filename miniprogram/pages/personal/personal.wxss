@@ -1,0 +1,106 @@
+.wrapper {
+    padding         : 12px;
+    background-color: #f2f2f2;
+}
+
+.card {
+    background-color: var(--weui-WHITE);
+    border-radius   : 8px;
+}
+
+.card-header {
+    color  : var(--weui-FG-1);
+    padding: 16px;
+}
+
+.card-row {
+    display   : flex;
+    border-top: 1px solid #f2f2f2;
+}
+
+.card-cell {
+    position    : relative;
+    width       : 33.33%;
+    flex-grow   : 0;
+    flex-shrink : 0;
+    border-right: 1px solid #f2f2f2;
+}
+
+.card-cell::before {
+    content    : "";
+    display    : block;
+    padding-top: 100%;
+}
+
+.cell-content {
+    position       : absolute;
+    top            : 0;
+    left           : 0;
+    bottom         : 0;
+    right          : 0;
+    z-index        : 999;
+    display        : flex;
+    justify-content: center;
+    flex-direction : column;
+    align-items    : center;
+    overflow       : hidden;
+}
+
+.cell-content:active {
+    background-color: var(--weui-FG-3);
+}
+
+.card-icon {
+    width : 32px;
+    height: 32px;
+}
+
+
+
+.card-desc {
+    background-color: var(--weui-RED);
+    font-size       : 12px;
+    font-weight     : 500;
+    color           : var(--weui-WHITE);
+    position        : absolute;
+    width           : 80px;
+    height          : 20px;
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+    text-align      : center;
+    right           : -6px;
+    top             : 32px;
+    transform       : rotate(45deg);
+    transform-origin: right bottom;
+}
+
+.mt-8 {
+    margin-top: 8px
+}
+
+.avatar {
+    width              : 100%;
+    /* background-color: #9fc6ff; */
+    height             : 130rpx;
+    /* 水平垂直居中 */
+    display            : flex;
+    justify-content    : center;
+    align-items        : center;
+}
+
+.userinfo-avatar {
+    overflow     : hidden;
+    display      : block;
+    width        : 80rpx;
+    height       : 80rpx;
+    margin       : 20rpx;
+    margin-top   : 40rpx;
+    border-radius: 50%;
+    border       : 2px solid #fff;
+    box-shadow   : 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.nname {
+    margin-top: 40rpx;
+}

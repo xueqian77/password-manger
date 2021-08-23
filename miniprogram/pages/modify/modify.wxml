@@ -1,0 +1,20 @@
+<form>
+  <view class="cu-form-group">
+    <view class="title">描述</view>
+    <input value="{{describe}}" bindinput="onNameInput" placeholder="请输入描述(必填)"></input>
+  </view>
+  <view class="cu-form-group">
+    <view class="title">账号</view>
+    <input value="{{account}}" bindinput="onAccountInput" placeholder="请输入账号"></input>
+  </view>
+  <view class="cu-form-group">
+    <view class="title">密码</view>
+    <input value="{{password}}" bindinput="onPasswordInput" placeholder="请输入密码"></input>
+  </view>
+  <view class="cu-form-group">
+    <view class="title">分类</view>
+    <input value="{{type}}" bindinput="onTypeInput" placeholder="请输入类型"></input>
+  </view>
+</form>
+<text>\n</text>
+<button type="primary" bindtap="onButtonTap">修改</button>

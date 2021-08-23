@@ -1,0 +1,29 @@
+<block wx:if="{{accounts.length === 0}}">
+  <text>\n</text>
+  <text>\n</text>
+  <text>\n</text>
+  <view class="no-accounts"><image style="width:200px;height:200px" src="/images/icon_zwsj.jpg"></image></view>
+</block>
+<block wx:else>
+  <view class="weui-panel">
+    <view class="weui-panel__bd">
+      <view class="weui-media-box weui-media-box_small-appmsg">
+        <view class="weui-cells">
+          <navigator url="/pages/accounts/accounts" class="weui-cell weui-cell_access">
+            <view class="weui-cell__hd">
+              <image src="/images/icon_all.png"></image>
+            </view>
+            <view class="weui-cell__bd">全部</view>
+            <view class="weui-cell__ft weui-cell__ft_in-access">{{sum}}</view>
+          </navigator>
+        </view>
+        <view class="weui-cells" wx:for="{{accounts}}" wx:key="index" wx:if="{{ item._id }}">
+          <navigator url="/pages/accounts/accounts?type={{item._id}}" class="weui-cell weui-cell_access">
+                <view class="weui-cell__bd">{{item._id}}</view>
+            <view class="weui-cell__ft weui-cell__ft_in-access">{{item.total}}</view>
+          </navigator>
+        </view>
+      </view>
+    </view>
+  </view>
+</block>

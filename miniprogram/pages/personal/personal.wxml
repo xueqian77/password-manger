@@ -1,0 +1,43 @@
+<view class="avatar">
+  <view class="userinfo-avatar">
+    <open-data type="userAvatarUrl"></open-data>
+  </view>
+  <view class="nname">
+    <open-data type="userNickName"></open-data>
+  </view>
+</view>
+<view class="wrapper">
+  <view class="card mt-16">
+    <view class="card-header">服务</view>
+    <view class="card-content">
+      <view class="card-row">
+        <view class="card-cell">
+          <button class="text-button cell-content" bindtap="onChangePasswordTap">
+            <image class="card-icon" src="/images/icon_key.png"></image>
+            <view class="mt-8">修改密钥</view>
+          </button>
+        </view>
+        <view class="card-cell">
+          <button class="text-button cell-content" open-type="contact">
+            <image class="card-icon" src="/images/icon_helper.png"></image>
+            <view class="mt-8">联系管理员</view>
+          </button>
+        </view>
+        <view class="card-cell">
+          <button class="text-button cell-content" open-type="share" bindtap="onCardShareTap">
+            <image class="card-icon" src="/images/icon_share.png"></image>
+            <view class="mt-8">分享</view>
+          </button>
+        </view>
+      </view>
+      <view class="card-row">
+        <view class="card-cell">
+          <button class="text-button cell-content" bindtap="onIndependentDeployTap">
+            <image class="card-icon" src="/images/icon_private.png"></image>
+            <view class="mt-8">私有部署</view>
+          </button>
+        </view>
+      </view>
+    </view>
+  </view>
+</view> 

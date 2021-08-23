@@ -1,0 +1,9 @@
+page {
+  height: 100%
+}
+
+button {
+  margin-top   : 30rpx;
+  margin-bottom: 30rpx;
+}
+
